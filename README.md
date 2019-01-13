@@ -1,1 +1,3 @@
-# Arbbot version 0.0.1 only has 2 exchanges Bitfinex and Poloniex trading 3 currencies: Ripple, Ethereum and LiteCoin
+Arbbot version 0.0.2 only has 3 exchanges Bitfinex, Poloniex, Binance
+trading 5 currencies: Ripple, Ethereum, LiteCoin, BitcoinCash CSV, ZCash
+Also added balances and TransactionLog
