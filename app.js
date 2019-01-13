@@ -100,7 +100,7 @@ var self = this
 // setInterval() repeat the process
 setTimeout(function(){
 	console.log("Retrieving data...")
-	balance.setStartingBalance(1000)
+	balance.setStartingBalance(100)
 	setInterval(function(){
 		//compare(self)
 		compare1(self)
@@ -139,7 +139,7 @@ var min = 0
 
 function compare1(self){
 	console.log(balance.usdBalance())
-	console.log(TransactionLog)
+	//console.log(TransactionLog)
 	//console.log("compare1")
 	//test: get price of the first thing only. index = 0
 	for(i of index){
@@ -192,7 +192,6 @@ function compare1(self){
 						var len = TransactionLog.length
 						if (len < 7 && !TransactionLog.includes(amountTrade, 0)){
 							TransactionLog.push(amountTrade)
-							console.log(amountTrade)
 							console.log(sellKey, 'sell on', exchanges_names[bidIndex], 'price', max, 'buy on', exchanges_names[askIndex], 'price', min)
 
 							balance.updateBalance('add', sellExchange, 'BTC', max, amountTrade)
@@ -200,11 +199,11 @@ function compare1(self){
 
 							balance.updateBalance('add', buyExchange, otherCoin, min, amountTrade)
 							balance.updateBalance('minus', buyExchange, 'BTC', min, amountTrade)
+
 	
 						}
 						if (!TransactionLog.includes(amountTrade, -6)){
 							TransactionLog.push(amountTrade)
-							console.log(amountTrade)
 							console.log(sellKey, 'sell on', exchanges_names[bidIndex], 'price', max, 'buy on', exchanges_names[askIndex], 'price', min)
 
 							balance.updateBalance('add', sellExchange, 'BTC', max, amountTrade)
