@@ -138,7 +138,7 @@ var min = 0
 
 
 function compare1(self){
-	console.log(balance.usdBalance())
+	console.log("Balance:", balance.usdBalance())
 	//console.log(TransactionLog)
 	//console.log("compare1")
 	//test: get price of the first thing only. index = 0
@@ -173,12 +173,12 @@ function compare1(self){
 					var profit = amountTrade * (max - min)
 
 					if (amountTrade > 0) {
-						/*console.log(exchanges[0].orderbook)
+						console.log(exchanges[0].orderbook)
 						console.log(exchanges[1].orderbook)
 						console.log(exchanges[2].orderbook)
 						console.log(amountSell, amountBuy, amountTrade)
 						console.log(sellKey, 'sell on', exchanges_names[bidIndex], 'price', max, 'buy on', exchanges_names[askIndex], 'price', min)
-						console.log('Profit', profit)*/
+						console.log('Profit', profit)
 						//var pasteString = ''
 						//pasteString = sellKey + ' sell on ' + exchanges_names[bidIndex] + ' price ' + max.toString() +  ' /n. Buy on ' + exchanges_names[askIndex], ' price ' + min.toString() + './n Profit is ' +  profit.toString() + ' BTC or ' + (profit * 3500).toString() + ' USD.' 
 						
